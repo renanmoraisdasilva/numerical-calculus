@@ -1,13 +1,13 @@
 import math
 
-print("\nMÉTODO BISSECÇÃO:\n")
+print("\nBISECTION METHOD\n")
 
 contador = 0
 
 def bissecção(f,a,b,erro):
 
     if f(a)*f(b) >= 0:
-        print("Método falhou.")
+        print("Failed.")
         return None
     
     #para manejar uma variável global
@@ -19,15 +19,12 @@ def bissecção(f,a,b,erro):
     
     while True:
         p_n = (a_n + b_n)/2
-        
-        
         if abs(b_n-a_n) < erro:
             global f_x
             f_x = f(p_n)
             break
         
         contador += 1
-        
         if f(a_n) * f(p_n) < 0:
             b_n = p_n
         elif f(b_n) * f(p_n) < 0:
