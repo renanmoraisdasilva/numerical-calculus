@@ -1,4 +1,4 @@
-# Root-finding algorithms
+# Root-finding algorithm - Bisection method
 
 ENGLISH
 
